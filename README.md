@@ -1,1 +1,5 @@
-# radi-boilerplate
+# radi-boilerplate-parcel
+
+```
+npm run dev
+```

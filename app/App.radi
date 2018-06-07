@@ -1,0 +1,18 @@
+import RadiRouter from 'radi-router'
+import RadiFetch from 'radi-fetch'
+import routes from './routes.js'
+
+const Fetch = _radi.plugin(RadiFetch, {
+  baseUrl: 'https://randomuser.me',
+  headers: {
+    /* 'Authorization': 1, */
+  },
+  dummy: false,
+  dummyTimeout: 2000,
+  dummyData: {},
+});
+const { Router, Link } = _radi.plugin(RadiRouter, routes);
+
+window.Link = Link;
+
+<Router></Router>

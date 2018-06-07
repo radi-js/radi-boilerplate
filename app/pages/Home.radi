@@ -1,0 +1,48 @@
+import Default from '../layouts/Default.radi'
+
+state: {
+  users: [],
+}
+
+@action appendUsers(users) {
+  return {
+    users: users,
+  }
+}
+
+loadUsers() {
+  this.$fetch.get('/api')
+    .tag('taggedAPI')
+    .then(response => {
+      this.appendUsers(response.json().results)
+    }, console.error)
+}
+
+on: {
+  mount() {
+    this.loadUsers()
+  }
+}
+
+<Default>
+  <div>
+
+    {
+      this.$loading.state.taggedAPI
+      ? (
+        <span>Loading..</span>
+      )
+      : (
+        this.state.users.map(user => (
+          <span>{user.email}</span>
+        ))
+      )
+    }
+
+    <br/>
+
+    <button onclick={ e => this.loadUsers() }>Load another user</button>
+
+  </div>
+
+</Default>

@@ -1,0 +1,8 @@
+
+<section>
+  <div>Header</div>
+
+  { this.children }
+
+  <div>Footer</div>
+</section>
