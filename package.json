@@ -1,6 +1,6 @@
 {
   "name": "radi-boilerplace-parcel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,9 @@
     "babel-preset-env": "^1.7.0",
     "parcel-bundler": "1.6.2",
     "parcel-plugin-radi": "^0.3.11",
-    "radi": "^0.3.21",
-    "radi-fetch": "^0.3.21",
-    "radi-router": "^0.3.5",
+    "radi": "^0.3.23",
+    "radi-fetch": "^0.3.22",
+    "radi-router": "^0.3.22",
     "stylus": "^0.54.5"
   },
   "devDependencies": {

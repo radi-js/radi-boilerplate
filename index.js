@@ -9,7 +9,9 @@ if (module.hot) {
   module.hot.accept();
   module.hot.dispose(() => {
     // Before restarting the app, we create a new root element and dispose the old one
-    toDestroy.destroy();
+    for (var i = 0; i < toDestroy.length; i++) {
+      toDestroy[i].destroy();
+    }
     var del = document.getElementById('app');
     del.parentNode.replaceChild(del.cloneNode(false), del);
   });
