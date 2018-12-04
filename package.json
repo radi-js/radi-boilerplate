@@ -16,9 +16,9 @@
     "babel-preset-env": "^1.7.0",
     "parcel-bundler": "1.6.2",
     "parcel-plugin-radi": "^0.3.11",
-    "radi": "^0.3.23",
-    "radi-fetch": "^0.3.22",
-    "radi-router": "^0.3.22",
+    "radi": "^0.3.29",
+    "radi-fetch": "^0.3.23",
+    "radi-router": "^0.3.27",
     "stylus": "^0.54.5"
   },
   "devDependencies": {
